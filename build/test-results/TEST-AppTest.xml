@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-02-12T17:48:25" hostname="epicodus-59.local" time="0.003">
+<testsuite name="AppTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-02-12T18:19:27" hostname="epicodus-59.local" time="0.376">
   <properties/>
   <testcase name="replaceVowels_givenAPhrase_removeVowels" classname="AppTest" time="0.003"/>
+  <testcase name="rootTest" classname="AppTest" time="0.368"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[[Thread-4] INFO spark.webserver.SparkServer - == Spark has ignited ...
+[Thread-4] INFO spark.webserver.SparkServer - >> Listening on 0.0.0.0:4567
+[Thread-4] INFO org.eclipse.jetty.server.Server - jetty-9.0.2.v20130417
+[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@2638b1f9{HTTP/1.1}{0.0.0.0:4567}
+[Test worker] INFO spark.webserver.SparkServer - >>> Spark shutting down ...
+[Test worker] INFO org.eclipse.jetty.server.Server - Graceful shutdown org.eclipse.jetty.server.Server@4d7cb793 by 
+[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@2638b1f9{HTTP/1.1}{0.0.0.0:4567}
+[Test worker] INFO spark.webserver.SparkServer - done
+]]></system-err>
 </testsuite>
