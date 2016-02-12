@@ -17,12 +17,18 @@ public class AppTest extends FluentTest {
       return webDriver;
   }
 
-  @ClassRule
-  public static ServerRule server = new ServerRule();
-
+  // @ClassRule
+  // public static ServerRule server = new ServerRule();
+  //
+  // @Test
+  // public void rootTest() {
+  //     goTo("http://localhost:4567/");
+  //     assertThat(pageSource()).contains("");
+  // }
   @Test
-  public void rootTest() {
-      goTo("http://localhost:4567/");
-      assertThat(pageSource()).contains("");
+  public void replaceVowels_givenAPhrase_removeVowels() {
+    App testApp = new App();
+    assertEquals("H_ll_ W_rld", testApp.replaceVowels("Hello World"));
   }
+
 }
