@@ -1,8 +1,15 @@
 #parse( $form )
 #if($wordPuzzle)
-<h2>Here is your word puzzle:</h2>
-<h2>$wordPuzzle</h2>
-<h2>Can you figure out the original phrase???</h2>
-<label for="guessPhrase">Guess the phrase:</label>
-<input type="text" name="guessPhrase" id="guessPhrase">
+<h3>Here is your word puzzle:</h3>
+<div class="phrase">
+  <h2>$wordPuzzle</h2>
+</div>
 #end
+<h3>Can you figure out the original phrase???</h3>
+<form action="/guess">
+  <div class="form-group">
+    <label for="guessPhrase">Guess the phrase:</label>
+    <input type="text" name="guessPhrase" autofocus="autofocus" id="guessPhrase">
+    <button type="submit" id = "puzzle" class = "btn btn-primary">Submit</button>
+  </div>
+</form>

@@ -5,11 +5,26 @@
   <h2>$wordPuzzle</h2>
 </div>
 #end
-<h3>Can you figure out the original phrase???</h3>
+#if($guess)
+<div class="winLose">
+  <h1>$guess</h1>
+</div>
+#end
+#if($guess.contains("Yay"))
+<h3>Here is the original phrase:</h3>
+<div class="phrase">
+  <h2>$win</h2>
+</div>
+<h3>To play again, just enter a new phrase up top.</h3>
+#end
+
+
+#if($guess.contains("Sorry"))
+<h3>Try again to guess the phrase:</h3>
 <form action="/guess">
   <div class="form-group">
     <label for="guessPhrase">Guess the phrase:</label>
     <input type="text" name="guessPhrase" autofocus="autofocus" id="guessPhrase">
-    <button type="submit" id = "puzzle" class = "btn btn-primary">Submit</button>
   </div>
 </form>
+#end
