@@ -5,7 +5,7 @@
 ## A word puzzle program
 #### The user inputs a sentence or phrase and the program removes the vowels and displays the altered sentence or phrase on a new page.  There is then an input field that someone can use to try and correctly guess what the sentence/phrase initially said.
 
-## To set up, clone the repository to your local hard drive.  Navigate to the root directory wordPuzzleJava in your terminal.  Run gradle in your terminal by typing: gradle run.  This should ignite the spark webserver.  You can now open up a web browser and go to localhost:4567 to play the word puzzle game.
+## To set up, clone the repository to your local hard drive.  Navigate to the root directory wordPuzzleJava in your terminal.  Run gradle in your terminal by typing: gradle run.  This should ignite the spark webserver.  You can now open up a web browser and go to "http://localhost:4567/" to play the word puzzle game.
 
 
 
